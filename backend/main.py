@@ -34,11 +34,11 @@ CLASS_NAMES = [
 # MODEL PATH
 # =========================
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent
 
 MODEL_PATH = (
     BASE_DIR /
-    "Model" /
+    "model" /
     "banana_ripeness_resnet18.pt"
 )
 

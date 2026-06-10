@@ -427,8 +427,8 @@ if st.session_state.step == "upload":
         st.markdown('<div class="card-marker"></div>', unsafe_allow_html=True)
         st.markdown('<div class="card-content-wrapper">', unsafe_allow_html=True)
         
-        st.markdown('<h1 class="card-title">Banana Ripeness Classification</h1>', unsafe_allow_html=True)
-        st.markdown('<p class="card-subtitle">Upload a photo of a banana to check its ripeness level using our scientific grading model.</p>', unsafe_allow_html=True)
+        st.markdown('<h1 class="card-title">Klasifikasi Kematangan Pisang</h1>', unsafe_allow_html=True)
+        st.markdown('<p class="card-subtitle">Unggah foto pisang untuk memeriksa tingkat kematangannya dengan model penilaian kami.</p>', unsafe_allow_html=True)
         
         # Prepare upload box HTML
         if st.session_state.uploaded_file is None:
@@ -442,8 +442,8 @@ if st.session_state.step == "upload":
                         <line x1="16" y1="11" x2="20" y2="11" />
                     </svg>
                 </div>
-                <div class="upload-title">Tap to upload or drag image</div>
-                <div class="upload-subtitle">SUPPORTS JPG, PNG, WEBP</div>
+                <div class="upload-title">Masukkan Gambar Pisang</div>
+                <div class="upload-subtitle">MENDUKUNG JPG, PNG, WEBP</div>
             </div>
             """
         else:
@@ -459,7 +459,6 @@ if st.session_state.step == "upload":
                         <path d="M9 12l2 2 4-4" stroke="#006d36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <span class="file-name">{st.session_state.uploaded_file.name}</span>
-                    <span class="file-change-text">Tap or drag to change image</span>
                 </div>
             </div>
             """
@@ -484,14 +483,14 @@ if st.session_state.step == "upload":
             
         # Classify button marker and button
         st.markdown('<div class="classify-btn-container"></div>', unsafe_allow_html=True)
-        classify_clicked = st.button("Classify Ripeness", key="classify_btn_widget")
+        classify_clicked = st.button("Klasifikasi Kematangan", key="classify_btn_widget")
         
         st.markdown('</div>', unsafe_allow_html=True) # close card-content-wrapper
 
     # Classify click action
     if classify_clicked:
         if st.session_state.uploaded_file is None:
-            st.warning("Please upload a banana image first.")
+            st.warning("Mohon unggah foto pisang terlebih dahulu.")
         else:
             try:
                 files = {
