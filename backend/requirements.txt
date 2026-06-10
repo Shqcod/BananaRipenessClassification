@@ -4,6 +4,3 @@ torch
 torchvision
 pillow
 python-multipart
-
-streamlit
-requests
