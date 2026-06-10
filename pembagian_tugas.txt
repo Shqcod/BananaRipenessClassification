@@ -1,0 +1,4 @@
+Pencarian Dataset : Shaldi
+Cleaning dan Modeling : Faruqi
+Setting Hyperparameter untuk mencari model yang bagus atau sesuai : Faruqi dan Shaldi
+Pembuatan Website deployment model : Faruqi dan Shaldi
